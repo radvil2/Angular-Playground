@@ -57,7 +57,11 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+							"mmd-parser",
+							"opentype.js"
+						]
           },
           "configurations": {
             "production": {
