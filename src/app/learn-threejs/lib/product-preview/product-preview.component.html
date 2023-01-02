@@ -1,4 +1,26 @@
 <ngt-canvas>
-  <ngt-color attach="background" color="white"></ngt-color>
-	<ngt-primitive *ngIf="cupCoffee$ | ngrxPush as cupCoffe" [object]="cupCoffe.scene"></ngt-primitive> 
+  <!-- #1 add canvas background color -->
+  <ngt-color attach="background" color="aliceblue"></ngt-color>
+
+  <!-- #3 add ambient light -->
+  <ngt-ambient-light [intensity]="0.5"></ngt-ambient-light>
+
+  <!-- #4 add some point lights -->
+  <ngt-point-light [intensity]="0.5" [position]="[1, 1, 0]"></ngt-point-light>
+  <ngt-point-light [intensity]="0.5" [position]="[-1, 1, 0]"></ngt-point-light>
+  <ngt-point-light [intensity]="0.5" [position]="[1, -1, 0]"></ngt-point-light>
+
+  <!-- #2 add base model -->
+  <ngt-primitive
+    *ngIf="cupCoffee$ | ngrxPush as cupCoffe"
+    (ready)="onObjectReady($event)"
+    [object]="cupCoffe.scene"
+    name="cupCoffeObject"
+  >
+  </ngt-primitive>
+
+  <!-- #5 add the orbit control to be able to rotate the object -->
+  <ngt-soba-orbit-controls
+    (ready)="onOrbitControlReady($event)"
+  ></ngt-soba-orbit-controls>
 </ngt-canvas>
