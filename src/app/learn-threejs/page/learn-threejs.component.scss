@@ -1,12 +1,30 @@
 :host {
+  --page-header-height: 60px;
+  --page-bg-color: #333;
+
   display: block;
   width: 100%;
   height: 100%;
+  background-color: var(--page-bg-color);
 }
 
-.page-header {
+mat-toolbar {
+  height: var(--page-header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   .page-title {
     margin: 0;
+  }
+}
+
+.navigations {
+  .nav-button {
+    &.active {
+      background-color: bisque !important;
+      color: #333 !important;
+    }
   }
 }
 
@@ -15,7 +33,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  height: 90%;
+  height: calc(100% - var(--page-header-height));
 }
 
 .product-preview-card {
@@ -35,12 +53,14 @@
 
 .preview-meta {
   padding: 2rem;
+  overflow-y: overlay;
 }
 
 .product-title {
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-top: 0;
 }
 
 .color-bullet {
@@ -65,7 +85,7 @@
 }
 
 .color-options-container {
-	margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 .color-options {

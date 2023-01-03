@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ProductPreviewComponent } from 'src/app/learn-threejs/lib';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDividerModule } from '@angular/material/divider';
-import { BehaviorSubject, distinctUntilChanged } from 'rxjs';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule } from '@angular/router';
 import { LetModule } from '@ngrx/component';
+import { BehaviorSubject, distinctUntilChanged } from 'rxjs';
+import { ProductPreviewComponent } from 'src/app/learn-threejs/lib';
 
 type HexValue = `#${string}`;
 
@@ -13,6 +15,18 @@ interface ColorOption {
 	label: string;
 	value: HexValue;
 }
+
+export interface RouteNavigation {
+	link: string;
+	title: string;
+}
+
+export const RouteNavigations: RouteNavigation[] = [
+	{
+		link: 'mug-editor',
+		title: 'Mug Editor',
+	},
+];
 
 @Component({
 	standalone: true,
@@ -22,8 +36,10 @@ interface ColorOption {
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	imports: [
 		CommonModule,
+		RouterModule,
 		ProductPreviewComponent,
 		MatCardModule,
+		MatButtonModule,
 		MatToolbarModule,
 		MatDividerModule,
 		LetModule,
@@ -52,6 +68,8 @@ export class LearnThreejsComponent {
 			value: '#181818',
 		},
 	];
+
+	readonly navigations = RouteNavigations;
 
 	readonly #selectedColor = new BehaviorSubject<ColorOption>(
 		this.colorOptions[0]

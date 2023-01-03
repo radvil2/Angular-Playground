@@ -71,15 +71,15 @@ export class ProductPreviewComponent extends ComponentStore<State> {
   cupMaterial?: MeshStandardMaterial;
 
   onObjectReady(object: Object3D): void {
-    const mesh = object.getObjectByName('Object_2') as Mesh;
-    this.cupMaterial = mesh.material as MeshStandardMaterial;
+    const cupCoverMesh = object.getObjectByName('Object_2') as Mesh;
+    this.cupMaterial = cupCoverMesh.material as MeshStandardMaterial;
     this.#applyColorToMaterial();
   }
 
   onOrbitControlReady(orbitControls: OrbitControls): void {
-    orbitControls.enableZoom = true;
+    orbitControls.enableZoom = false;
     orbitControls.autoRotate = true;
-    orbitControls.autoRotateSpeed = 9;
+    orbitControls.autoRotateSpeed = 3;
     orbitControls.target.set(0, 0.5, 0);
     orbitControls.object.position.setY(3);
 
