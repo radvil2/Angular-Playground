@@ -47,7 +47,7 @@ export class MugEditorComponent {
 		},
 		{
 			label: 'Black',
-			value: '#181818',
+			value: '#323232',
 		},
 	];
 
