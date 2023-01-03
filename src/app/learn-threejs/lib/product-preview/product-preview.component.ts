@@ -84,7 +84,7 @@ export class ProductPreviewComponent extends ComponentStore<State> {
     orbitControls.object.position.setY(3);
 
     const camera = orbitControls.object as PerspectiveCamera;
-    camera.zoom = 3;
+    camera.zoom = 4;
     camera.receiveShadow = true; // idk what is this
 		console.log(orbitControls)
   }
