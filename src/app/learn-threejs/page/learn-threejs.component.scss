@@ -17,79 +17,17 @@ mat-toolbar {
   .page-title {
     margin: 0;
   }
-}
 
-.navigations {
-  .nav-button {
-    &.active {
-      background-color: bisque !important;
-      color: #333 !important;
+  .navigations {
+    .nav-button {
+      &.active {
+        background-color: bisque !important;
+        color: #333 !important;
+      }
     }
   }
 }
 
 .page-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
   height: calc(100% - var(--page-header-height));
-}
-
-.product-preview-card {
-  display: flex;
-  flex-direction: row;
-  height: 400px;
-  max-width: 900px;
-
-  .preview-meta {
-    flex: 1;
-  }
-
-  .preview-wrapper {
-    flex: 1;
-  }
-}
-
-.preview-meta {
-  padding: 2rem;
-  overflow-y: overlay;
-}
-
-.product-title {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 0;
-}
-
-.color-bullet {
-  display: block;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  cursor: pointer;
-
-  &.small {
-    height: 20px;
-    width: 20px;
-  }
-
-  &:hover {
-    filter: opacity(0.7);
-  }
-
-  &.selected {
-    border: 7px solid bisque;
-  }
-}
-
-.color-options-container {
-  margin: 2rem 0;
-}
-
-.color-options {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
 }

@@ -1,1 +1,39 @@
-<p>mug-editor works!</p>
+<mat-card class="product-preview-card" *ngrxLet="selectedColor$ as selected">
+  <div class="preview-meta">
+    <h2 class="product-title">
+      <span>Coffe Mug</span>
+      <span
+        class="color-bullet small"
+        [style.backgroundColor]="selected.value"
+      ></span>
+    </h2>
+
+    <p class="caption">This is a prefect coffe mug for you</p>
+
+    <mat-divider style="margin-bottom: 1rem"></mat-divider>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
+      laudantium impedit nostrum magnam deleniti minus error eius culpa dolores
+      id sit cum labore, minima, est alias unde voluptate explicabo reiciendis?
+    </p>
+
+    <div class="color-options-container">
+      <h2 class="product-title">COLOR OPTIONS</h2>
+
+      <div class="color-options">
+        <span
+          [class.selected]="option.value === selected.value"
+          [style.backgroundColor]="option.value"
+          *ngFor="let option of colorOptions"
+          (click)="changeColor(option)"
+          class="color-bullet"
+        ></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="preview-wrapper">
+    <app-product-preview [color]="selected.value"></app-product-preview>
+  </div>
+</mat-card>
