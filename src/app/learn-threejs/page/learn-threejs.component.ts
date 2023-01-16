@@ -17,6 +17,11 @@ export const RouteNavigations: RouteNavigation[] = [
 		title: 'Mug Editor',
 		icon: 'code',
 	},
+	{
+		link: 'reuse-gltf',
+		title: 'Reuse GLTF',
+		icon: 'home',
+	},
 ];
 
 @Component({

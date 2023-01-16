@@ -14,8 +14,15 @@ export const LearnThreeJSRoutes: Routes = [
 						.MugEditorComponent,
 			},
 			{
+				path: 'reuse-gltf',
+				title: 'Reuse GLTF',
+				loadComponent: async () =>
+					(await import('./reuse-gltf/reuse-gltf.component'))
+						.ReuseGltfComponent,
+			},
+			{
 				path: '',
-				redirectTo: 'mug-editor',
+				redirectTo: 'reuse-gltf',
 				pathMatch: 'full',
 			},
 		],
