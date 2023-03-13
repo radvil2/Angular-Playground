@@ -1,0 +1,20 @@
+@import "../variables";
+
+.todo-scheduler-time-cell {
+  height: var(--cell-height);
+  min-width: var(--cell-min-width);
+  display: flex;
+  flex-flow: column wrap;
+
+  &:hover {
+    background-color: bisque;
+  }
+}
+
+.time-label {
+  user-select: none;
+  font-weight: 500;
+  font-size: 0.7em;
+  cursor: default;
+  color: #515151;
+}
