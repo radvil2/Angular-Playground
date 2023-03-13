@@ -2,5 +2,12 @@
   <h2 class="page-title">Booking Schedule</h2>
 </mat-toolbar>
 <div class="page-body">
-  <app-scheduler-table></app-scheduler-table>
+  <mat-card class="table-card" *ngIf="true">
+    <!-- [gridOptions]="(gridOptions$ | ngrxPush)!" -->
+    <!-- [dateTimeRange]="schedulerStore.timeRange$ | ngrxPush" -->
+    <!-- [colDefs]="(schedulerStore.columnDefs$ | ngrxPush)!" -->
+    <!-- [isLoading]="(isLoading$ | ngrxPush)!" -->
+    <!-- (cellDblclick)="onCellDblClick($event)" -->
+    <app-scheduler-table></app-scheduler-table>
+  </mat-card>
 </div>

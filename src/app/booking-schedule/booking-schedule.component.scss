@@ -23,6 +23,16 @@ mat-toolbar {
 }
 
 .page-body {
+  display: block;
   height: calc(100% - var(--page-header-height));
   padding: 1em;
 }
+
+.table-card {
+  margin-bottom: 0;
+}
+
+app-scheduler-table {
+  display: grid;
+}
+

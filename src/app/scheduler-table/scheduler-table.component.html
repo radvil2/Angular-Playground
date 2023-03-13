@@ -1,1 +1,59 @@
-<p>scheduler-table works!</p>
+<!-- <ng-container *ngTemplateOutlet="isLoading ? loaderTF : null"></ng-container> -->
+<!---->
+<!-- <div class="scheduler-scrollable-container"> -->
+<!--   <div class="table-sidebar-container"> -->
+<!--     <div class="cell sidebar-cell header">🕓</div> -->
+<!--     <div class="cell sidebar-cell" *ngFor="let def of rowDefs"> -->
+<!--       {{ def.label }} -->
+<!--     </div> -->
+<!--   </div> -->
+<!---->
+<!--   <div class="table-body"> -->
+<!--     <div class="table-body-headers-row"> -->
+<!--       <div class="column" *ngFor="let coldef of colDefs"> -->
+<!--         <div class="col-header cell" [ngStyle]="coldef?.styles || {}"> -->
+<!--           {{ coldef.headerName }} -->
+<!--         </div> -->
+<!--         <div class="column direction-row"> -->
+<!--           <ng-container *ngIf="coldef.children?.length"> -->
+<!--             <div class="col-header cell" *ngFor="let child of coldef.children" [ngStyle]="child?.styles || null"> -->
+<!--               {{ child.headerName }} -->
+<!--             </div> -->
+<!--           </ng-container> -->
+<!--         </div> -->
+<!--       </div> -->
+<!--     </div> -->
+<!---->
+<!--     <div class="table-body-content"> -->
+<!--       <div #currentTimeIndicator id="current-time-indicator"> -->
+<!--         <div class="icon">🕓</div> -->
+<!--         <div class="line"></div> -->
+<!--       </div> -->
+<!---->
+<!--       <ng-container *ngFor="let col of colDefs; trackBy: trackByField; index as colIndex"> -->
+<!--         <ng-template [ngTemplateOutlet]=" -->
+<!--             col.children?.length ? cellsWithChildrenTF : cellsWithoutChildrenTF -->
+<!--           " [ngTemplateOutletContext]="{ col, colIndex }"> -->
+<!--         </ng-template> -->
+<!--       </ng-container> -->
+<!--     </div> -->
+<!--   </div> -->
+<!-- </div> -->
+<!---->
+<!-- <ng-template #cellsWithoutChildrenTF let-col="col" let-colIndex="colIndex"> -->
+<!--   <div class="column direction-column"> -->
+<!--     <ng-container *ngFor="let slot of col.slots"> -->
+<!--       <ng-template slotHost [config]="slot" [colDef]="col"></ng-template> -->
+<!--     </ng-container> -->
+<!---->
+<!--     <div class="cell" *ngFor="let row of rowDefs; index as rowIndex" -->
+<!--       (dblclick)="onCellDblclicked(rowIndex, row, colIndex, col)" -->
+<!--       [class.active]="isWorkingHour(row.time, col.timeRanges)"></div> -->
+<!--   </div> -->
+<!-- </ng-template> -->
+<!---->
+<!-- <ng-template #loaderTF> -->
+<!--   <div class="loader-container"> -->
+<!--     <ngx-skeleton-loader [theme]="{ height: '50px' }" animation="pulse" [count]="13"></ngx-skeleton-loader> -->
+<!--   </div> -->
+<!-- </ng-template> -->
