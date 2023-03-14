@@ -1,22 +1,9 @@
-@import "./variables";
+@import "./var";
 
-.todo-scheduler-container {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4;
-
-  * {
-    box-sizing: border-box;
-  }
-}
-
-.todo-scheduler-body {
+@mixin center-content {
   display: flex;
-  overflow: auto;
-
-  .body-part {
-    flex: 1 0;
-  }
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin sticky-left {
@@ -25,12 +12,64 @@
   left: 0;
 }
 
-.todo-scheduler-sidebar {
-  // width: auto;
-  // position: relative;
+.scheduler-container {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  overflow: auto;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+// header
+.scheduler-headers {
+  display: flex;
+  width: auto;
+  margin-bottom: 3px;
+  color: white;
+}
+
+.col-headers-clock {
+  background-color: #0b0724;
+  min-width: 120px;
+  text-align: center;
+  border: 1px solid red;
   @include sticky-left();
-  min-width: var(--sidebar-min-width);
-  max-width: 5em;
+  @include center-content();
+}
+
+.col-header {
+  background-color: #0b0724;
+  flex: 1;
+  text-align: center;
+  padding: var(--col-header-padding);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: default;
+
+  &:not(:last-child) {
+    border-right: 1px solid red;
+  }
+}
+
+.col-headers-group {
+  display: flex;
+  flex: 1 0;
+  border: 1px solid red;
+}
+
+// body
+.scheduler-body {
+  display: flex;
+}
+
+// sidebar
+.scheduler-sidebar {
+  @include sticky-left();
+  min-width: 120px;
   border: 1px solid aliceblue;
   overflow: hidden;
   background-color: #f1f1f1;
@@ -53,26 +92,21 @@
   }
 }
 
-@mixin center-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .sidebar-time-cell {
   @include center-content();
   height: var(--cell-height);
   cursor: default;
 
   &:not(:last-child) {
-    border-bottom: thin dashed #e1e1e1;
+    border-bottom: thin dashed #a34800;
   }
 }
 
-.todo-scheduler-content {
+// body content
+.scheduler-content {
   display: flex;
-  // flex-flow: row wrap;
   border-top: 1px solid yellow;
+  flex: 1 0;
 }
 
 .content-col {
@@ -83,6 +117,7 @@
   border-right: 1px solid #e1e1e1;
 }
 
+// time group & cells
 .content-col-time-group {
   display: flex;
   flex-flow: column wrap;
@@ -93,4 +128,23 @@
   :not(:last-child) .todo-scheduler-time-cell {
     border-bottom: thin dashed bisque;
   }
+}
+
+.todo-scheduler-time-cell {
+  height: var(--cell-height);
+  min-width: var(--cell-min-width);
+  display: flex;
+  flex-flow: column wrap;
+
+  &:hover {
+    background-color: bisque;
+  }
+}
+
+.time-label {
+  user-select: none;
+  font-weight: 500;
+  font-size: 0.7em;
+  cursor: default;
+  color: #515151;
 }

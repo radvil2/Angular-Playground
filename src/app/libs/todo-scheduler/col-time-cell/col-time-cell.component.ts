@@ -7,14 +7,13 @@ import {
 
 @Component({
   standalone: true,
-  selector: "todo-scheduler-time-cell",
-  templateUrl: "time-cell.component.html",
-  styleUrls: ["./time-cell.component.scss"],
+  selector: "todo-scheduler-col-time-cell",
+  templateUrl: "col-time-cell.component.html",
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [],
 })
-export class TimeCellComponent {
+export class TodoSchedulerColTimeCellComponent {
   @Input()
-  label = "6:00 AM"
+  label = "6:00 AM";
 }

@@ -1,8 +1,8 @@
-<div class="todo-scheduler-container">
+<div class="scheduler-container">
   <todo-scheduler-header></todo-scheduler-header>
 
-  <div class="todo-scheduler-body">
-    <div class="todo-scheduler-sidebar body-part">
+  <div class="scheduler-body">
+    <div class="scheduler-sidebar">
       <div class="sidebar-time-group">
         <div class="sidebar-time-cell">6:00 AM</div>
         <div class="sidebar-time-cell">6:15 AM</div>
@@ -47,269 +47,605 @@
       </div>
     </div>
 
-    <div class="todo-scheduler-content body-part">
+    <div class="scheduler-content">
       <div class="content-col">
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="6:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="7:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="8:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="9:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="10:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="11:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="12:00 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:15 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:30 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:45 PM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:00 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:15 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:30 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:45 PM"
+          ></todo-scheduler-col-time-cell>
         </div>
       </div>
       <div class="content-col">
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="6:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="7:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="8:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="9:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="10:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="11:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="12:00 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:15 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:30 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:45 PM"></todo-scheduler-time-cell>
-        </div>
-      </div>
-      <div class="content-col">
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="6:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:45 AM"></todo-scheduler-time-cell>
-        </div>
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="7:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:45 AM"></todo-scheduler-time-cell>
-        </div>
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="8:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:45 AM"></todo-scheduler-time-cell>
-        </div>
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="9:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:45 AM"></todo-scheduler-time-cell>
-        </div>
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="10:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:45 AM"></todo-scheduler-time-cell>
-        </div>
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="11:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:45 AM"></todo-scheduler-time-cell>
-        </div>
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="12:00 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:15 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:30 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:45 PM"></todo-scheduler-time-cell>
-        </div>
-      </div>
-      <div class="content-col">
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="6:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:45 AM"></todo-scheduler-time-cell>
-        </div>
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="7:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:45 AM"></todo-scheduler-time-cell>
-        </div>
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="8:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:45 AM"></todo-scheduler-time-cell>
-        </div>
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="9:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:45 AM"></todo-scheduler-time-cell>
-        </div>
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="10:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:45 AM"></todo-scheduler-time-cell>
-        </div>
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="11:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:45 AM"></todo-scheduler-time-cell>
-        </div>
-        <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="12:00 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:15 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:30 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:45 PM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:00 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:15 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:30 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:45 PM"
+          ></todo-scheduler-col-time-cell>
         </div>
       </div>
       <div class="content-col">
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="6:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="7:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="8:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="9:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="10:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="11:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="12:00 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:15 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:30 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:45 PM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:00 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:15 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:30 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:45 PM"
+          ></todo-scheduler-col-time-cell>
         </div>
       </div>
       <div class="content-col">
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="6:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="6:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="7:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="7:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="8:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="8:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="9:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="9:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="10:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="10:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="11:00 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:15 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:30 AM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="11:45 AM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:45 AM"
+          ></todo-scheduler-col-time-cell>
         </div>
         <div class="content-col-time-group">
-          <todo-scheduler-time-cell label="12:00 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:15 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:30 PM"></todo-scheduler-time-cell>
-          <todo-scheduler-time-cell label="12:45 PM"></todo-scheduler-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:00 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:15 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:30 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:45 PM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+      </div>
+      <div class="content-col">
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="6:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:45 AM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="7:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:45 AM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="8:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:45 AM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="9:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:45 AM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="10:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:45 AM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="11:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:45 AM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="12:00 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:15 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:30 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:45 PM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+      </div>
+      <div class="content-col">
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="6:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="6:45 AM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="7:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="7:45 AM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="8:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="8:45 AM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="9:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="9:45 AM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="10:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="10:45 AM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="11:00 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:15 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:30 AM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="11:45 AM"
+          ></todo-scheduler-col-time-cell>
+        </div>
+        <div class="content-col-time-group">
+          <todo-scheduler-col-time-cell
+            label="12:00 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:15 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:30 PM"
+          ></todo-scheduler-col-time-cell>
+          <todo-scheduler-col-time-cell
+            label="12:45 PM"
+          ></todo-scheduler-col-time-cell>
         </div>
       </div>
     </div>
