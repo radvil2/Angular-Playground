@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component } from "@angular/core";
 
 @Component({
   standalone: true,
-  selector: "todo-scheduler-header",
-  templateUrl: "scheduler-header.component.html",
+  selector: "tdx-layout-header",
+  templateUrl: "tdx-layout-header.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TodoSchedulerHeaderComponent { }
+export class TdxLayoutHeaderComponent { }

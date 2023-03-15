@@ -12,7 +12,7 @@
   left: 0;
 }
 
-.scheduler-container {
+.tdx-layout-container {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
@@ -24,20 +24,26 @@
 }
 
 // header
-.scheduler-headers {
+.tdx-layout-headers {
   display: flex;
   width: auto;
   margin-bottom: 3px;
   color: white;
-}
 
-.col-headers-clock {
-  background-color: #0b0724;
-  min-width: 120px;
-  text-align: center;
-  border: 1px solid red;
-  @include sticky-left();
-  @include center-content();
+  .col-headers-clock {
+    background-color: #0b0724;
+    min-width: 120px;
+    text-align: center;
+    border: 1px solid red;
+    @include sticky-left();
+    @include center-content();
+  }
+
+  .col-headers-group {
+    display: flex;
+    flex: 1 0;
+    border: 1px solid red;
+  }
 }
 
 .col-header {
@@ -55,19 +61,13 @@
   }
 }
 
-.col-headers-group {
-  display: flex;
-  flex: 1 0;
-  border: 1px solid red;
-}
-
 // body
-.scheduler-body {
+.tdx-layout-body {
   display: flex;
 }
 
 // sidebar
-.scheduler-sidebar {
+.tdx-body-sidebar {
   @include sticky-left();
   min-width: 120px;
   border: 1px solid aliceblue;
@@ -103,48 +103,51 @@
 }
 
 // body content
-.scheduler-content {
+.tdx-body-content {
   display: flex;
   border-top: 1px solid yellow;
   flex: 1 0;
 }
 
-.content-col {
+tdx-content-col {
   display: flex;
   flex-flow: column wrap;
   flex: 1 0;
-  position: relative;
-  border-right: 1px solid #e1e1e1;
-}
 
-// time group & cells
-.content-col-time-group {
-  display: flex;
-  flex-flow: column wrap;
-  flex: 1 0;
-  background-color: #fafafa;
-  border-bottom: 1px solid red;
+  .tdx-content-col {
+    position: relative;
+    border-right: 1px solid #e1e1e1;
 
-  :not(:last-child) .todo-scheduler-time-cell {
-    border-bottom: thin dashed bisque;
+    // time group & cells
+    .time-cells-group {
+      display: flex;
+      flex-flow: column wrap;
+      flex: 1 0;
+      background-color: #fafafa;
+      border-bottom: 1px solid red;
+
+      :not(:last-child) .tdx-time-cell {
+        border-bottom: thin dashed red;
+      }
+    }
   }
 }
 
-.todo-scheduler-time-cell {
+.tdx-time-cell {
   height: var(--cell-height);
-  min-width: var(--cell-min-width);
+  min-width: var(--cell-width);
   display: flex;
   flex-flow: column wrap;
 
   &:hover {
     background-color: bisque;
   }
-}
 
-.time-label {
-  user-select: none;
-  font-weight: 500;
-  font-size: 0.7em;
-  cursor: default;
-  color: #515151;
+  .time-label {
+    user-select: none;
+    font-weight: 500;
+    font-size: 0.7em;
+    cursor: default;
+    color: #515151;
+  }
 }
