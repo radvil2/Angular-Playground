@@ -123,7 +123,7 @@ tdx-content-col {
       display: flex;
       flex-flow: column wrap;
       flex: 1 0;
-      background-color: #fafafa;
+      // background-color: #fafafa;
       border-bottom: 1px solid red;
 
       :not(:last-child) .tdx-time-cell {
@@ -138,6 +138,10 @@ tdx-content-col {
   min-width: var(--cell-width);
   display: flex;
   flex-flow: column wrap;
+
+  // test
+  background-color: #fff;
+  border-bottom: 1px dashed burlywood;
 
   &:hover {
     background-color: bisque;

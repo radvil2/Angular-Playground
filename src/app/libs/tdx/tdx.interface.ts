@@ -11,6 +11,10 @@ interface BaseModel {
   index?: number;
 }
 
+interface FuncParams<T = any> extends BaseModel {
+  data: T;
+}
+
 export interface TdxOptions<HeaderData = any, SlotData = any> {
   headerDefs: TdxHeaderDef<HeaderData>[];
   data: SlotData[];
@@ -18,12 +22,12 @@ export interface TdxOptions<HeaderData = any, SlotData = any> {
   cellsData: TdxCellDef[];
 }
 
-export interface TdxHeaderDef<Data = any> extends BaseModel {
+export interface TdxHeaderDef<Data = any> {
   label: string | TdxHeaderLabelFormatterFunc;
   data: Data;
 }
 
-export interface TdxCellDef extends BaseModel {
+export interface TdxCellDef {
   classNames?: string | string[];
   cellRenderer?: TdxCellRendererComp;
   children?: TdxCellDef[];
@@ -36,10 +40,8 @@ export type TdxHeaderLabelFormatterFunc<T = any> = (
   def: TdxHeaderDef<T>
 ) => string;
 
-export interface TdxColRendererParams extends BaseModel {
-  headerDef: TdxHeaderDef;
-}
-export interface TdxCellRendererParams extends BaseModel {
+export type TdxColRendererParams = FuncParams<{ headerDef: TdxHeaderDef }>;
+export type TdxCellRendererParams = FuncParams<{
   headerDef: TdxHeaderDef;
   parent?: TdxCellRendererParams;
-}
+}>;

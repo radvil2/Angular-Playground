@@ -8,4 +8,4 @@ import { TdxColCellComponent } from "../tdx-col-cell/tdx-col-cell.component";
   encapsulation: ViewEncapsulation.None,
   imports: [TdxColCellComponent],
 })
-export class TdxContentColComponent { }
+export class TdxContentColComponent {}
