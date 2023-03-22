@@ -1,51 +1,8 @@
 <div class="tdx-content-col">
-    <tdx-col-cell></tdx-col-cell>
-    <tdx-col-cell></tdx-col-cell>
-    <tdx-col-cell></tdx-col-cell>
-    <tdx-col-cell></tdx-col-cell>
-    <tdx-col-cell></tdx-col-cell>
-    <tdx-col-cell></tdx-col-cell>
-    <tdx-col-cell></tdx-col-cell>
-  <!-- <div class="time-cells-group"> -->
-  <!--   <tdx-col-cell label="6:00 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="6:15 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="6:30 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="6:45 AM"></tdx-col-cell> -->
-  <!-- </div> -->
-  <!-- <div class="time-cells-group"> -->
-  <!--   <tdx-col-cell label="7:00 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="7:15 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="7:30 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="7:45 AM"></tdx-col-cell> -->
-  <!-- </div> -->
-  <!-- <div class="time-cells-group"> -->
-  <!--   <tdx-col-cell label="8:00 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="8:15 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="8:30 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="8:45 AM"></tdx-col-cell> -->
-  <!-- </div> -->
-  <!-- <div class="time-cells-group"> -->
-  <!--   <tdx-col-cell label="9:00 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="9:15 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="9:30 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="9:45 AM"></tdx-col-cell> -->
-  <!-- </div> -->
-  <!-- <div class="time-cells-group"> -->
-  <!--   <tdx-col-cell label="10:00 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="10:15 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="10:30 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="10:45 AM"></tdx-col-cell> -->
-  <!-- </div> -->
-  <!-- <div class="time-cells-group"> -->
-  <!--   <tdx-col-cell label="11:00 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="11:15 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="11:30 AM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="11:45 AM"></tdx-col-cell> -->
-  <!-- </div> -->
-  <!-- <div class="time-cells-group"> -->
-  <!--   <tdx-col-cell label="12:00 PM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="12:15 PM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="12:30 PM"></tdx-col-cell> -->
-  <!--   <tdx-col-cell label="12:45 PM"></tdx-col-cell> -->
-  <!-- </div> -->
+  <div class="time-cells-group" *ngFor="let group of groups">
+    <tdx-col-cell
+      *ngFor="let cell of group.cellDefs"
+      [cellDef]="cell"
+    ></tdx-col-cell>
+  </div>
 </div>
